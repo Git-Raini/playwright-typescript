@@ -10,3 +10,4 @@ test('getstarted link', async({page}) => {
     await page.getByRole('link', { name: /OrangeHRM/i }).click();
     await expect(page).toHaveTitle(/OrangeHRM/);
 });
+
