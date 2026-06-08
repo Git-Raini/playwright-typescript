@@ -1,7 +1,23 @@
 {
-  "name": "node-starter",
+  "name": "starter",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  "version": "1.0.0",
+  "description": "[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/Git-Raini/playwright-typescript)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Git-Raini/playwright-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Git-Raini/playwright-typescript/issues"
+  },
+  "homepage": "https://github.com/Git-Raini/playwright-typescript#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.2"
   }
 }
