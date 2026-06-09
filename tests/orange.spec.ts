@@ -48,7 +48,18 @@ test('Add User', async({page}) => {
     await page.getByPlaceholder('Username').fill('Admin');
     await page.getByPlaceholder('Password').fill('admin123');
     await page.getByRole('button', { name: 'Login' }).click();
+    if (await page.locator('button:has-text("OK")').count() > 0) {
+        await page.locator('button:has-text("OK")').click();
+    }
     await page.getByPlaceholder('Search').fill('Admin');
     await page.getByText('Admin').click();
     await page.getByRole('button', { name: 'Add' }).click();
+    await page.getByLabel('User Role').selectOption('1');
+    await page.getByPlaceholder('Employee Name').fill('RD_Test');
+    await page.getByLabel('Status').selectOption('1');
+    await page.getByPlaceholder('Username').fill('RD_Test');
+    await page.getByPlaceholder('Password').fill('RD_Test@123');
+    await page.getByPlaceholder('Confirm Password').fill('RD_Test@123');
+    await page.getByRole('button', { name: 'Save' }).click();
 });
+
